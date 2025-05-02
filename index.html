@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rush National Truck and Repair</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      background-image: url('truck.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .contact {
+      margin-top: 20px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #000;
+      background: #f9f9f9;
+    }
+    form button {
+      background: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rush National Truck and Repair</h1>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We specialize in fast, reliable diesel repair for 18-wheelers and heavy-duty trucks. On-time service, expert mechanics, and nationwide support.</p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Diesel engine diagnostics and repair</li>
+      <li>Transmission and drivetrain services</li>
+      <li>Brake and suspension repair</li>
+      <li>Emergency roadside assistance</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Free Estimate</h2>
+    <p>Contact us today for a free repair estimate. Fast, no-obligation quotes from our diesel repair experts.</p>
+    <h2>Contact Us</h2>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rush National Truck and Repair. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
